@@ -20,3 +20,52 @@ test("checking if input box is there" , () => {
   expect(checkInput).toHaveAttribute("type" , "text");
   expect(checkInput).toHaveAttribute("value" , "Barsat singh");
 })
+describe.only("UI test cases" , ()=> {
+  test("check the input" , ()=> {
+    render(<App/>)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toBeInTheDocument();
+    expect(checkInput).toHaveAttribute("type" , "text")
+  })
+  test("check the input2" , ()=> {
+    render(<App/>)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toBeInTheDocument();
+    expect(checkInput).toHaveAttribute("type" , "text")
+  })
+  test("check the input3" , ()=> {
+    render(<App/>)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toBeInTheDocument();
+    expect(checkInput).toHaveAttribute("type" , "text")
+  })
+})
+describe("API test cases" , ()=> {
+  test("api input" , ()=> {
+    render(<App/>)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toBeInTheDocument();
+    expect(checkInput).toHaveAttribute("type" , "text")
+  })
+  test("api input2" , ()=> {
+    render(<App/>)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toBeInTheDocument();
+    expect(checkInput).toHaveAttribute("type" , "text")
+  })
+  test("api input3" , ()=> {
+    render(<App/>)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toBeInTheDocument();
+    expect(checkInput).toHaveAttribute("type" , "text")
+  })
+  describe('inner describe group', () => {
+    test('api nested test' , ()=> {
+      render(<App/>)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toBeInTheDocument();
+    expect(checkInput).toHaveAttribute("type" , "text")
+    })
+  })
+  
+})

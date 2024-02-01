@@ -9,3 +9,14 @@ test('testing app component text' , ()=> {
   expect(title).toBeInTheDocument();
   expect(text2).toBeInTheDocument();
 })
+
+test("checking if input box is there" , () => {
+  render(<App/>)
+  let checkInput = screen.getByRole("textbox")
+  let checkPlaceholder = screen.getByPlaceholderText(/Enter Your Name Gracefully/i)
+  expect(checkInput).toBeInTheDocument();
+  expect(checkPlaceholder).toBeInTheDocument();
+  expect(checkInput).toHaveAttribute("name" , "Kartavya");
+  expect(checkInput).toHaveAttribute("type" , "text");
+  expect(checkInput).toHaveAttribute("value" , "Barsat singh");
+})

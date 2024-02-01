@@ -4,20 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>First react test case</h1>
+    <h1>Second react test case</h1>
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGrand_Theft_Auto_V&psig=AOvVaw3iMufZdODAlg0R6mXBWhMQ&ust=1706872074024000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPC9hY6AioQDFQAAAAAdAAAAABAE" title="Grand Theft Auto" />
     </div>
   );
 }
